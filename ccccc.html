@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talha | Full Stack Developer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: #0f172a; color: #e2e8f0; line-height: 1.6; scroll-behavior: smooth; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #1e293b; position: fixed; width: 100%; z-index: 100; }
+    header h1 { color: #38bdf8; font-size: 1.5rem; }
+    header nav a { margin-left: 20px; text-decoration: none; color: #e2e8f0; transition: 0.3s; }
+    header nav a:hover { color: #38bdf8; }
+
+    section { min-height: 100vh; padding: 120px 40px 40px; }
+
+    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; animation: fadeIn 1.5s ease-in-out; }
+    .hero img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #38bdf8; margin-bottom: 20px; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 10px; color: #38bdf8; }
+    .hero p { font-size: 1.2rem; max-width: 700px; }
+
+    .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #38bdf8; color: #0f172a; border-radius: 5px; text-decoration: none; transition: transform 0.3s ease; }
+    .btn:hover { transform: scale(1.1); }
+
+    .about, .skills, .projects, .contact { margin-top: 60px; }
+    h2.section-title { font-size: 2rem; margin-bottom: 20px; color: #38bdf8; text-align: center; }
+
+    .skills, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(56, 189, 248, 0.3); }
+
+    footer { text-align: center; padding: 20px; background: #1e293b; color: #94a3b8; }
+
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Talha</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="your-photo.jpg" alt="Talha Photo">
+    <h2>Hello, I'm Talha</h2>
+    <p>Aspiring Full Stack Web Developer learning React, Node.js, and AI integration.  
+       I am building real-world projects every day and sharing my coding journey online to grow as a developer.</p>
+    <a href="#projects" class="btn">See My Projects</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="max-width:800px; margin:auto; text-align:center;">
+      I’m Talha, a software engineering student and aspiring Full Stack Developer.  
+      I’m currently focused on learning the MERN Stack (MongoDB, Express.js, React, Node.js) while also exploring AI tools and integration.  
+      My goal is to create modern, intelligent web applications and eventually build scalable SaaS products.  
+      Every day, I practice coding, build projects, and post them on GitHub and LinkedIn to grow my portfolio and connect with professionals.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills">
+      <div class="card">HTML5 & CSS3</div>
+      <div class="card">JavaScript (ES6+)</div>
+      <div class="card">React.js (Learning)</div>
+      <div class="card">Node.js & Express (Learning)</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">Responsive Web Design</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio site built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+        <a href="#" target="_blank" style="color:#38bdf8;">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Interactive Quiz App</h3>
+        <p>A JavaScript-powered quiz app with timer, dynamic questions, and scoring system.</p>
+        <a href="#" target="_blank" style="color:#38bdf8;">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Uses OpenWeather API to fetch and display live weather data for any city.</p>
+        <a href="#" target="_blank" style="color:#38bdf8;">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Blog Website (React)</h3>
+        <p>A simple blog interface built using React for the frontend (in progress).</p>
+        <a href="#" target="_blank" style="color:#38bdf8;">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p style="text-align:center;">Email: your.email@example.com</p>
+    <p style="text-align:center;">LinkedIn: <a href="#" style="color:#38bdf8;">Your LinkedIn</a></p>
+    <p style="text-align:center;">GitHub: <a href="#" style="color:#38bdf8;">Your GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Talha. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
